@@ -1,0 +1,180 @@
+
+
+
+body{
+    background:  url(/../../assets/imgs/banner-bg.jpg);  
+margin-top: 2px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+
+ul {
+	list-style: none;
+	margin: 70px;
+
+}
+
+p {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+
+
+.banner .social-links {
+  list-style: none;
+  margin-top: 0px;
+  padding-right: 100px;
+}
+
+.banner .social-links li {
+  display: block;
+  text-align: center;
+  margin: 20px 10px;
+  transition: all 0.5s;
+}
+
+.banner .social-links a {
+  margin-top: 100;
+  display:block;
+  opacity: 2;
+  transition: all 0.5s;
+  text-align: left;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing: 0.5px;
+  color:rgb(14, 13, 13);
+  font-size: 17px;
+  font-weight: 300;
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  background-color: rgba(199, 212, 174, 0.74);
+}
+
+.banner .social-links a em {
+	font-style: normal;
+	font-weight: 900;
+
+}
+
+.banner .social-links a i {
+	float: right;
+	background-color: rgba(250, 250, 250, 0.2);
+	height: 50px;
+	width: 50px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 36px;
+}
+
+.banner .social-links li:hover {
+  background-color:cadetblue;
+  padding: 5px;
+}
+
+.banner .social-links li:hover i {
+    background-color:cadetblue;
+  padding: 5px;
+}
+
+
+.banner {
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+
+.left-side {
+	text-align: left;
+
+    margin-top:2px;
+	margin-left: -100vh;
+	padding-left: 50vh;
+    padding-right: 50vh;
+    position: absolute;
+    left: 400px;
+    width: 765px;
+    height: 490px;
+  
+}
+
+
+
+.banner .page-direction-button {
+	margin-top: 120px;
+}
+.banner .logo img {
+	padding-top: 60px;
+	max-width: 100%;
+}
+.banner .tabs-content {
+	margin-top: 100px;
+    margin-bottom: 0px;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 700;
+    
+   
+}
+.nav2{
+   
+    height: 30px;
+    width: 98.3%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contact{
+    position: absolute;
+    right: 20px;
+
+}
+
+.search{
+  position: absolute;
+  right: 190px;
+}
+
+.about{
+    position: absolute;
+    right:  110px;
+   
+}
+
+.pay{
+  position: absolute;
+  right: 270px;
+}
+.pay:hover{
+  background-color:  transparent ;
+  border: 2px solid rgb(12, 11, 10);
+  padding: 2px;
+}
+
+.search:hover{
+  background-color:  transparent ;
+  border: 2px solid rgb(12, 11, 10);
+  padding: 2px;
+}
+
+.about:hover{
+    background-color:  transparent ;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+.contact:hover{
+   background-color:  transparent ;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}

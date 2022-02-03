@@ -1,0 +1,58 @@
+<nav class="navbar">
+  
+   <div class="na">
+       <h1> <mat-icon routerLink="home">flight</mat-icon> Welcome To <b>SkyPlanner Flights</b></h1>
+   </div>
+     
+    <div class="book">
+       <a mat-button color="red" routerLink="book"routerLinkActive="active">Book the flight</a>
+    </div>
+
+    <div class="flight">
+        <a mat-button color="red" routerLink="allflights"routerLinkActive="active">FlightDetails</a>
+    </div>
+
+    <div class="home">
+        <a mat-button color="red" routerLink="home"routerLinkActive="active">Home</a>
+    </div>
+
+    <div class = "checkin">
+        <a mat-button color="red" routerLink="checkin"routerLinkActive="active">Check IN</a>
+    </div>
+
+    <div class = "cancle">
+        <a mat-button color="red" routerLink="cancle"routerLinkActive="active">Cancle Booking</a>
+    </div>
+
+</nav>
+ 
+  <router-outlet></router-outlet>
+
+<div class="footer_about1">
+
+
+  <nav class="nav2">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="tabs-content">
+                          
+            <ul class="social-links">
+                  <a href="https://www.facebook.com/FlightAware"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+                  <a href="https://www.youtube.com/c/theskyplanner"> <i class="fa fa-youtube"></i></a>
+                  <a href="https://www.instagram.com/flightaware/"><i class="fa fa-instagram"></i></a>
+
+            </ul>
+        </div>
+
+              <div class="contact">
+                  <a mat-stroked-button routerLink="/contact"routerLinkActive="active">Contact Us</a>
+              </div>
+              <div class="about">
+                  <a mat-stroked-button  routerLink="/about"routerLinkActive="active">About Us</a>
+              </div>
+              <div class="about1">
+                  <div>©SkyPlanners 2022, All Rights Reserved.</div>
+              </div>
+     </nav>
+</div>
+     
+    

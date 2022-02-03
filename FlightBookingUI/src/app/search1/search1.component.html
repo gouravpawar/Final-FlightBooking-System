@@ -1,0 +1,81 @@
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+
+
+<div class="container">
+    <div class = "card-header">
+        <h3 class = "test text-center"> <b>Search the FlightDetails</b> </h3>
+    </div>
+    </div>
+                <div class = "card-body">
+                    <section class="booking-form">
+                        <form [formGroup]= "searchForm" (ngSubmit)= "searchNow();searchForm.reset();" >
+                           
+                            <div class = "booking-form" >
+                                <Label for = "pnrNo" class = "form-label">PNR NP : </Label>
+                                <input type = "number"  formControlName = "pnrNo" class = "form-control" id = "pnrNo" name = "pnrNo"  value = {{pnrNo}} required >
+                               
+                                <span *ngIf = "searchForm.controls.pnrNo"></span>
+                            </div>
+                            <!-- <br>
+                            
+                           
+                            <div class = "booking-form">
+                                <Label for = "endPoint" class = "form-label">EndPoint :</Label>
+                                <input type = "string" formControlName = "endPoint" class = "form-control" id = "endPoint" name = "endPoint" >
+                                <span *ngIf = "searchForm.controls.endPoint"></span>
+                            </div>
+                            <br>
+                           
+                            <div class = "booking-form">
+                                <Label for = "flightDate" class = "form-label">FlightDate :</Label>
+                                <input type = "text" formControlName = "flightDate" class = "form-control" id = "flightDate" name = "flightDate" >
+                                <span *ngIf = "searchForm.controls.flightDate"></span>
+                            </div>
+                            <br> -->
+                             
+                    <div class = "input-grp">
+                        <button mat-raized-button type = "submit" class ="btn btn-primary from-control" onsubmit="">Search</button>
+                    </div>
+   </form>
+   <h1> <span>Flight Details</span> </h1>
+   <table class = "table tables-striped">
+      <thead>
+          <tr>  
+             <th>PNR NO</th><br>
+             <!-- <th>businessClass</th><br>
+             <th>deptTime</th><br>
+              <th>duration</th><br>
+              <th>economyClass</th><br>
+              <th>endPoint</th><br>
+              <th>flightDate</th><br>
+              <th>flightNo</th><br>
+              <th>noOfSeats</th><br>
+              <th>premiumEconomy</th><br>
+              <th>startPoint</th><br> -->
+              
+          </tr>
+      </thead>
+      <tbody>
+           
+        <tr  *ngFor="let messages of message">
+         <td>{{messages.pnrNo}}</td><br>
+         <!-- <td>{{messages.businessClass}}</td><br>
+         <td>{{messages.deptTime}}</td><br>
+         <td>{{messages.duration}}</td><br>
+         <td>{{messages.economyClass}}</td><br>
+         <td>{{messages.endPoint}}</td><br>
+         <td>{{messages.flightDate}}</td><br>
+         <td>{{messages.flightNo}}</td><br>
+         <td>{{messages.noOfSeats}}</td><br>
+         <td>{{messages.premiumEconomy}}</td><br>
+         <td>{{messages.startPoint}}</td><br> -->
+       </tr>
+      </tbody>
+      <br><br><br>
+   </table>

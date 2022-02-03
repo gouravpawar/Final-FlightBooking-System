@@ -1,0 +1,77 @@
+.container{
+   
+   margin-top: 40px;
+   align-items: center;
+  border: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 3px;
+    background-color: rgba(197, 206, 180, 0.74);
+    margin-left: 180px;
+    margin-top: 50px;
+   
+  }
+  .btn1 {
+      margin-top: 20px;
+      background-color: lightskyblue;
+      color: rgb(0, 0, 0);
+      padding: 6px 10px;
+      margin: 8px 0;
+      margin-left: 560px;
+      border: 0.6px solid;
+      border-radius: 2px;
+      cursor: pointer;
+      /* width: 100%; */
+      /* opacity: 0.9; */
+  }
+  .btn1:hover{
+    border: 2px rgb(12, 11, 10);
+    background-color: rgb(61, 159, 219);
+    padding: 8px;
+
+}
+
+body{
+  /* background:  url(/../../assets/imgs/Q.jpeg);   */
+ 
+    background-color: whitesmoke;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  
+  }
+  h1{
+    border: 2px solid;
+    border-radius: 2px;
+    background-color: rgb(235, 232, 232);
+    margin-left: 70px;
+    width: 90%;
+  }
+  span{
+    margin-left: 480px;
+  }
+ 
+  .form-control{
+    margin-left: 23px;
+    border: solid black;
+    width: 250px;
+}
+.header{
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+  nav{
+    border: black solid;
+    width: 300px;
+    height: 100px;
+    margin-left: 490px;
+    margin-top: 1px;
+    background-color:rgba(197, 206, 180, 0.74) ;
+}
+.border{
+  margin-top: 10px;
+}

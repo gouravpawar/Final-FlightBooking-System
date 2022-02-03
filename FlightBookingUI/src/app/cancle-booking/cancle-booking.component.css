@@ -1,0 +1,43 @@
+.container{
+    padding: 50px;
+    align-content: center;
+
+    
+}
+
+
+.card{
+    padding: 50px;
+    text-align: center;
+}
+.form-group{
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.text-danger{
+    color: red;
+    margin-left: 5px;
+}
+
+body{
+    background:  url(/../../assets/imgs/s.png);
+    height: 83%;
+}
+
+.btn1{
+    border: black solid;
+    background-color: rgb(140, 235, 235);
+
+}
+.row{
+    border: black solid;
+    height: 300px;
+    width: 350px;
+    margin-left: 370px;
+    margin-top: 25px;
+    background-color: rgb(235, 233, 233);
+    /* background-color: transparent; */
+  
+}

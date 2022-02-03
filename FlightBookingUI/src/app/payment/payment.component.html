@@ -1,0 +1,94 @@
+
+<!-- <nav class="navbar">
+    <h5>Enter Your Payment Details</h5>
+    
+  </nav> -->
+
+
+<div class="body">
+
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6 offset-md-3">
+                <div class = "card">
+                    <div class = "card-header">
+                        <h3 class = "test1 text-center">Enter Details For Payment</h3>
+                    </div>
+                    <div class = "card-body">
+                        <section class="pay-form">
+                            <form [formGroup]= "paymentForm" (ngSubmit)= "payNow();paymentForm.reset();" class ="payment-form" >
+                                
+                                <div class = "form-group">
+                                    <Label for = "cardNo" class = "form-label">*Card Number : </Label>
+                                    <input type = "number" formControlName = "cardNo" class = "form-control" id = "cardNo" name = "cardNo">
+                                    <div class = "text-danger" id = "cardError"
+                                    *ngIf="!paymentForm.controls.cardNo.valid && paymentForm.controls.cardNo.dirty">
+                                    <span *ngIf= "paymentForm.controls.cardNo.errors.pattern" class = "text-danger">It should be 16 digit number</span>
+                                    <span *ngIf = "paymentForm.controls.cardNo.errors.required" class = "text-danger">Card No. Required</span>
+                                </div>
+                                </div>
+                                
+                               
+                                
+                                <div class = "form-group">
+                                    <Label for = "pnrNo" class = "form-label">*PNR Number :</Label>
+                                    <input type = "number" formControlName = "pnrNo" class = "form-control" id = "pnrNo" name = "pnrNo" >
+                                    <div class = "text-danger" id = "prnError"
+                                    *ngIf="!paymentForm.controls.pnrNo.valid && paymentForm.controls.pnrNo.dirty">
+                                    <span *ngIf = "paymentForm.controls.pnrNo.errors.required" class = "text-danger">Field Required</span>
+                                </div>
+                                </div>
+                                
+                                <div class = "form-group">
+                                    <Label for = "classType" class = "form-label">*classType : </Label>
+                                    <input type = "text" formControlName = "classType" class = "form-control" id = "classType" name = "classType" >
+                                    <div class = "text-danger" id = "classError"
+                                    *ngIf="!paymentForm.controls.classType.valid && paymentForm.controls.classType.dirty ">
+                                    
+                                    <span *ngIf = "paymentForm.controls.classType.errors.required" class = "text-danger">Field Required</span>
+                                </div>
+                                </div>
+                                
+                                <div class = "form-group">
+                                    <Label for = "cvv" class = "form-label">*CVV :</Label>
+                                    <input type = "number" formControlName = "cvv" class = "form-control" id = "cvv" name = "cvv" pattern="(/^[0-9]{3,3}$/)" >
+                                    <div class = "text-danger" id = "cvvError"
+                                    *ngIf="!paymentForm.controls.cvv.valid && paymentForm.controls.cvv.dirty ">
+                                    <span *ngIf= "paymentForm.controls.cvv.errors.pattern" class = "text-danger">CCV Should be 3 digits</span>
+                                    <span *ngIf = "paymentForm.controls.cvv.errors.required" class = "text-danger">Field Required</span>
+                                </div>
+                                </div>
+                                
+                                <div class = "form-group">
+                                    <Label for = "bankName" class = "form-label">*Bank Name :</Label>
+                                    <input type = "text" formControlName = "bankName" class = "form-control" id = "bankName" name = "bankName" >
+                                    <div class = "text-danger" id = "bankError"
+                                    *ngIf="!paymentForm.controls.bankName.valid && paymentForm.controls.bankName.dirty ">
+                                    <span *ngIf = "paymentForm.controls.bankName.errors.required" class = "text-danger">Field Required</span>
+                                </div>
+                                </div>
+                                
+                                
+                                <div class = "form-group">
+                                    <button  mat-flat-button type = "submit" class = "btn btn-primary form-control" onsubmit="">Pay Now</button> 
+                                </div>
+
+                              
+
+                                <!-- <div class = "form-group">
+                                    <button mat-flat-button type = "submit" class = "btn btn-primary form-control"  routerLink="/checkin" onsubmit="">Checkin</button> 
+                                </div> -->
+                                
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <app-search></app-search> -->
+    
+
+</div>
+

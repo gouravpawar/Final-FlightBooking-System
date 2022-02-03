@@ -1,0 +1,52 @@
+
+    <body>
+    
+        <nav class="nav">
+            <h1 class="header">Status Of User</h1>
+    <input class="form-control" type="text" name="name" [(ngModel)]="name" (ngModelChange)="SearchbyPnr()"
+    placeholder="Enter Name To Search Deatils">
+    </nav>
+        <div class = "container">
+             <h1> <span> <b> Passanger Details</b></span> </h1>
+              <table class = "table tables-striped">
+               
+               
+                <thead>
+                    <tr>
+                        <th>PNR No</th>
+                        <th>SeatNo</th>
+                        <th>name</th>
+                        <th>flightNo</th>
+                        <th>startPoint</th>
+                        <th>endPoint</th>
+                        <th>deptTime</th>
+                        <th>flightDate</th>
+                        <th>duration</th>
+                        <th>ClassType</th>
+                        <th>Payment</th>                  
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr *ngFor="let flightDetails of search">
+                        <td>{{flightDetails.pnrNo}}</td>
+                        <td>{{flightDetails.seatNo}}</td>
+                        <td>{{flightDetails.name}}</td>
+                        <td>{{flightDetails.flightNo}}</td>
+                        <td>{{flightDetails.startPoint}}</td>
+                        <td>{{flightDetails.endPoint}}</td>
+                        <td>{{flightDetails.deptTime}}</td>
+                        <td>{{flightDetails.flightDate}}</td>                       
+                        <td>{{flightDetails.duration}}</td>
+                        <td>{{flightDetails.classType}}</td>
+                        <td>{{flightDetails.payment}}</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- <button mat-stroked-button class = "btn1 btn-primary form-control"[routerLink]= "['/book']">Book the flight</button> -->
+        </div>
+        
+    </body>
